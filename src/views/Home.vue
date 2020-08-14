@@ -42,7 +42,7 @@ import ipv4 from 'node-ipv4'
         if (err) return console.error(err);
         console.log(subnet);
         this.ipHexa = subnet.address.hexadecimal
-      });
+      }); 
       })
       
       axios.get('http://localhost:12346/sites/ip/'+this.ipHexa).then(resp => {
