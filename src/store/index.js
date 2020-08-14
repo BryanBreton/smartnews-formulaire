@@ -1,15 +1,10 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-
+import formulairesStore from './Formulaires/formulaires.modules'
 Vue.use(Vuex)
 
-export default new Vuex.Store({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
+const Store = new Vuex.Store({
+  modules: {formulairesStore}
 })
+
+export default Store
